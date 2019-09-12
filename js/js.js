@@ -1,4 +1,7 @@
-var zms = document.getElementById('btnzms');
+var str = document.getElementById('btnstr');
+var ginos = document.getElementById('btngin');
+var vips = document.getElementById('btnvips');
+var mestu = document.getElementById('btnmestu');
 var fed = document.getElementById('btnfed');
 var cns = document.getElementById('btncns');
 var mrk = document.getElementById('btnmrk');
@@ -6,27 +9,38 @@ var campo = document.getElementById('btncampo');
 var emp = "";
 let spiner = document.getElementById('spiner');
 
-zms.addEventListener('click', function () {
-    emp = 'zms';
+str.addEventListener('click', function () {
+    emp = 'Starbucks';
     $('#modal').modal('show');
 }, false)
-
+ginos.addEventListener('click', function () {
+    emp = 'Ginos';
+    $('#modal').modal('show');
+}, false)
+vips.addEventListener('click', function () {
+    emp = 'Vips';
+    $('#modal').modal('show');
+}, false)
+mestu.addEventListener('click', function () {
+    emp = 'Mesturados';
+    $('#modal').modal('show');
+}, false)
 fed.addEventListener('click', function () {
-    emp = 'fed';
+    emp = 'Frutas Eduardo';
     $('#modal').modal('show');
 }, false)
 
 cns.addEventListener('click', function () {
-    emp = 'cns';
+    emp = 'SAT Canarisol';
     $('#modal').modal('show');
 }, false)
 
 mrk.addEventListener('click', function () {
-    emp = 'mrk';
+    emp = 'Merkazuma';
     $('#modal').modal('show');
 }, false)
 campo.addEventListener('click', function () {
-    emp = 'mrk';
+    emp = 'Campo';
     $('#modal').modal('show');
 }, false)
 
@@ -40,29 +54,7 @@ var hora = fecha.getHours() + ":" + fecha.getMinutes() + ":" + fecha.getSeconds(
 
 function donde() {
     var departamento = document.getElementById('Departamento').value;
-    if (departamento == 'ADM' && emp == 'fed') {
-        var idtablero = "5bd8a1d81b406d727095a414";
-        var idlist = "5bd8a1e2c6b1cc6e94473a06";
-        incidencias(idtablero, idlist);
-    }
-
-    if (departamento == 'ADM' && emp == 'cns') {
-        var idtablero = "5bd8a49da945a73e147703ca";
-        var idlist = "5bd8a4e30a1ea80ebe4cea4c";
-        incidencias(idtablero, idlist);
-    }
-
-    if (departamento == 'ADM' && emp == 'mrk') {
-        var idtablero = "5bd96d6bb2304159ca06c3b7";
-        var idlist = "5bd96f560f85c765d1cff919";
-        incidencias(idtablero, idlist);
-    }
-
-    if (departamento == 'ADM' && emp == 'zms') {
-        var idtablero = "5bdac8c235762315b08523a4";
-        var idlist = "5bdace52ec9cab8a2ecafe2a";
-        incidencias(idtablero, idlist);
-    }
+    
 
     if (departamento == 'Higiene') {
         var idtablero = "5d78cc65b7ccdd32953fc79b";

@@ -24,25 +24,29 @@
         <h2 style=" font-size: 1.2em;"><u>H</u>igiene, &nbsp </h2>
         <h2 style=" font-size: 1.2em;"><u>O</u>rden, &nbsp</h2>
         <h2 style=" font-size: 1.2em;"><u>L</u>impieza y&nbsp</h2>
-        <h2 style=" font-size: 1.2em;"><u>D</u>isciplina &nbsp</h2> 
+        <h2 style=" font-size: 1.2em;"><u>D</u>isciplina &nbsp</h2>
         <br><br>
 
-        <button type="button" id="btnzms" class="btn btn-outline-light" style="color: #6a89a4 ">Zuma Sec</button>
+        <button type="button" id="btnstr" class="btn btn-outline-light" style="color: #6a89a4 ">Starbucks</button>
+        <button type="button" id="btngin" class="btn btn-outline-light" style="color: #6a89a4 ">Ginos</button>
+        <button type="button" id="btnvips" class="btn btn-outline-light" style="color: #6a89a4 ">Vips</button>
+        <button type="button" id="btnmestu" class="btn btn-outline-light" style="color: #6a89a4 ">Mesturados</button>
         <button type="button" id="btnfed" class="btn btn-outline-light " style="color: #6a89a4 ">FrutasEduardo</button>
-        <button type="button" id="btncns" class="btn btn-outline-light " style="color: #6a89a4 " >Canarisol</button>
-        <button type="button" id="btnmrk" class="btn btn-outline-light " style="color: #6a89a4 " >Merkazuma</button>
-        <button type="button" id="btncampo" class="btn btn-outline-light " style="color: #6a89a4 ">Campo</button> <br><br>
-        
- 
+        <button type="button" id="btncns" class="btn btn-outline-light " style="color: #6a89a4 ">Canarisol</button>
+        <button type="button" id="btnmrk" class="btn btn-outline-light " style="color: #6a89a4 ">Merkazuma</button>
+        <button type="button" id="btncampo" class="btn btn-outline-light " style="color: #6a89a4 ">Campo</button>
+        <br><br>
 
-        <a data-toggle="modal" style="cursor: pointer;" data-target="#Modalinfo" style="color: #6a89a4 "> ¿Qué información debo reportar? </a><br>
-        <a data-toggle="modal" style="cursor: pointer;" data-target="#Modaltrata" style="color: #6a89a4 "> ¿Qué tratamiento tendrá mis reportes? </a><br>
-        <a data-toggle="modal" style="cursor: pointer;" data-target="#Modallogro" style="color: #6a89a4 "> ¿Qué se quiere lograr con ello? </a><br>
+
+
+        <a data-toggle="modal" style="cursor: pointer;" data-target="#Modalinfo" style="color: #6a89a4 "> ¿Qué es HOLD?</a><br>
+        <a data-toggle="modal" style="cursor: pointer;" data-target="#Modaltrata" style="color: #6a89a4 "> ¿Qué objetivo perseguimos?</a><br>
+        <a data-toggle="modal" style="cursor: pointer;" data-target="#Modallogro" style="color: #6a89a4 "> ¿Qué información es valiosa? </a><br>
+        <a data-toggle="modal" style="cursor: pointer;" data-target="#Modaluso" style="color: #6a89a4 "> ¿Qué uso se le dará a la información? </a><br>
     </div>
 
 
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog"
-        aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -52,7 +56,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p style="font-size: 12px; font-weight: bold;"> (Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy)</p>
+                    <p style="font-size: 12px; font-weight: bold;"> La información contenida en este reporte es material estrictamente <u style="color: red">confidencial y anónimo.</u> <br> Se usará con fines estadísticos y de consulta exclusivamente.
+                        </p>
                     <form name="contactform" method="post" action="javascript:;" onsubmit="donde()">
                         <div class="form-row">
                             <div class="form-group col-md-6">
@@ -64,22 +69,22 @@
                                     <option value="Orden" id="info">Orden</option>
                                     <option value="Limpieza" id="inci">Limpieza</option>
                                     <option value="Disciplina" id="info">Disciplina</option>
-                                    
+
                                 </select>
                             </div>
                             <div class="form-group col-md-6" style="display:none;">
                                 <label for="nombre">Nombre y apellidos</label>
-                                <input type="text" class="form-control" name="nombre" id="nombre" >
+                                <input type="text" class="form-control" name="nombre" id="nombre">
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-group col-md-6"  style="display:none;">
+                            <div class="form-group col-md-6" style="display:none;">
                                 <label for="mcorreo">Correo electronico</label>
-                                <input type="text" class="form-control" name="email" id="mcorreo" >
+                                <input type="text" class="form-control" name="email" id="mcorreo">
                             </div>
-                            <div class="form-group col-md-6"  style="display:none;">
+                            <div class="form-group col-md-6" style="display:none;">
                                 <label for="telefono">Teléfono</label>
-                                <input type="text" class="form-control" name="telefono" id="telefono" >
+                                <input type="text" class="form-control" name="telefono" id="telefono">
                             </div>
                         </div>
                         <div class="form-row">
@@ -94,7 +99,8 @@
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="incidencia">Describe tu reporte </label>
-                                <textarea class="form-control" name="comentarios" id="incidencia" rows="3"></textarea>
+                                <textarea class="form-control" name="comentarios" id="incidencia" maxlength="60"
+                                    rows="3"></textarea>
                             </div>
                         </div>
                         <div class="form-row">
@@ -116,66 +122,111 @@
             </div>
         </div>
     </div>
-<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
-    <div class="modal fade" id="Modalinfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="modal fade" id="Modalinfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Información a reportar</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Qué es HOLD?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Una filosofía y espíritu de trabajo, la ejecución clara y precisa de una serie de pasos y métodos
+                    que llevan a la mejora global del lugar de trabajo.
+                    Higiene, es la base de nuestro trabajo, debe imperar tanto en los procesos de trabajo, como en
+                    nosotros mismos.
+                    Orden, cada cosa en su lugar y un lugar para cada cosa. El orden del entorno facilita nuestro
+                    trabajo.
+                    Limpieza, trabajar en un entorno limpio para todos, ayuda a mantener áreas de trabajo más
+                    funcionales y cómodas.
+                    Disciplina, es esa raíz que todo lo nutre y que se expande en casi cualquier contexto, comprender la
+                    importancia del respeto por los demás y por las normas.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-info" data-dismiss="modal">Cerrar</button>
+
+                </div>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aliquid eaque qui ex debitis sed, veritatis laudantium aperiam culpa. Veritatis impedit iste ratione iure odio voluptate, nisi iusto ea officiis!
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Cerrar</button>
-              
-            </div>
-          </div>
         </div>
-      </div>
-<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
-      <div class="modal fade" id="Modaltrata" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    </div>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="modal fade" id="Modaltrata" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Tratamiento</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Qué objetivo perseguimos?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Transformar los lugares de trabajo involucrando al 100% del personal, queremos lugares de trabajo
+                    mejor ordenados, más limpios y seguros para todos, conseguir un mejor entorno laboral es posible.
+                    Es más agradable y seguro trabajar en un sitio limpio y ordenado.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-info" data-dismiss="modal">Cerrar</button>
+
+                </div>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, ipsam officia? Maxime aspernatur explicabo aliquam non deleniti, quaerat modi provident odio placeat alias reiciendis, nulla quae porro, at reprehenderit quam.
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Cerrar</button>
-              
-            </div>
-          </div>
         </div>
-      </div>
-<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
-      <div class="modal fade" id="Modallogro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    </div>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="modal fade" id="Modallogro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">¿Qué se quiere lograr con ello?</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> ¿Qué información es valiosa?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Toda la que esté relacionada con la Higiene, el Orden, la Limpieza y la Disciplina.
+                    ¿Ves algo fuera de lugar, ocupando un lugar destinado para el paso u otra cosa? Informa.
+                    ¿Las áreas de trabajo no están limpias cuando llegas a tu puesto de trabajo? Informa.
+                    ¿No se respetan las normas de higiene? Informa.
+                    ¿Ves un coche aparcado en el sentido equivocado? Informa.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-info" data-dismiss="modal">Cerrar</button>
+
+                </div>
             </div>
-            <div class="modal-body">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempore eveniet facere nisi est commodi iste, numquam alias architecto aliquam dolores doloremque mollitia, eos dolor quibusdam tenetur nihil ex voluptatem.
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Cerrar</button>
-              
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="modal fade" id="Modaluso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> ¿Qué uso se le dará a la información? </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    El tratamiento de la información será totalmente confidencial, no busca fines disciplinarios,
+                    solamente conocer de primera mano cuales son las incidencias HOLD para actuar sobre ellas. Si es
+                    necesario poner más papeleras, las pondremos. Si es necesario informar y formar sobre algunos
+                    aspectos, lo haremos.
+                    Es necesario que colaboremos todos para conseguir mejorar juntos.
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-info" data-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
